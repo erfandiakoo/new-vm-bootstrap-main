@@ -77,6 +77,7 @@ fi
 # Print Docker version
 echo "Docker version:"
 docker --version
-echo -e "{\n  \"registry-mirrors\": [\"https://docker.arvancloud.ir\"],\n  \"insecure-registries\": [\"docker.mkrdi.net\"],\n}" | sudo tee /etc/docker/daemon.json
+# Correct the daemon.json content
+echo -e "{\n  \"registry-mirrors\": [\"https://docker.arvancloud.ir\"],\n  \"insecure-registries\": [\"docker.mkrdi.net\"]\n}" | sudo tee /etc/docker/daemon.json
 systemctl restart docker.service
 echo "Docker installation completed successfully."
