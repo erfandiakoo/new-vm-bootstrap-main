@@ -77,6 +77,6 @@ fi
 # Print Docker version
 echo "Docker version:"
 docker --version
-echo -e "{\n  \"registry-mirrors\": [\"https://registry.docker.ir\"],\n  \"insecure-registries\": [\"reg.bigdata.digikala.com\",\"docker.bigdata.digikala.com\"],\n  \"data-root\": \"/bigdata/docker-logs\",\n  \"default-address-pools\": [\n    {\"base\":\"192.168.0.0/16\",\"size\":22}\n  ]\n}" | sudo tee /etc/docker/daemon.json
+echo -e "{\n  \"registry-mirrors\": [\"https://docker.arvancloud.ir\"],\n  \"insecure-registries\": [\"docker.mkrdi.net\"],\n}" | sudo tee /etc/docker/daemon.json
 systemctl restart docker.service
 echo "Docker installation completed successfully."

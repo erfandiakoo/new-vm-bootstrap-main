@@ -4,3 +4,8 @@ The script updates /etc/fstab to ensure the volume is automatically mounted at b
 Swap is disabled (comment out the line if applicable).
 The script expands the root disk size (adjust commands and partitioning as needed).
 The script updates system packages using apt.
+
+
+```sh
+ssh-keygen -t rsa -b 4096 -C "LABEL"
+```
